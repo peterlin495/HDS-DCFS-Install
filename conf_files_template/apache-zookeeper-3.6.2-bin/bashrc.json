@@ -1,0 +1,4 @@
+{
+    "ZK_HOME": "__ZK_HOME__",
+    "PATH": "$PATH:$ZK_HOME/bin"
+}

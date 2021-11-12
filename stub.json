@@ -1,0 +1,30 @@
+{
+    "cluster": {
+        "master": "__MASTER__",
+        "slave_first": "__SLAVE_FIRST__",
+        "slaves_str_comma": "__SLAVES_STR_COMMA__",
+        "slaves_str_lines": "__SLAVES_STR_LINES__",
+        "servers_str_comma": "__SERVERS_STR_COMMA__"
+    },
+    "jdk": {
+        "javaHome": "__JAVA_HOME__"
+    },
+    "maven": {
+        "installDir": "__MVN_HOME__"
+    },
+    "zookeeper": {
+        "installDir": "__ZK_HOME__"
+    },
+    "hadoop": {
+        "installDir": "__HADOOP_HOME__"
+    },
+    "hbase": {
+        "installDir": "__HBASE_HOME__"
+    },
+    "phoenix": {
+        "installDir": "__PHOENIX_HOME__"
+    },
+    "hdrs": {
+        "installDir": "__HDRS_HOME__"
+    }
+}
