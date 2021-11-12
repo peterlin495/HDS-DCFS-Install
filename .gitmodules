@@ -1,0 +1,3 @@
+[submodule "hds-2021"]
+	path = hds-2021
+	url = git@github.com:DSCLAB/hds-2021.git
