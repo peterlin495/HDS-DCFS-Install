@@ -19,7 +19,7 @@
 <configuration>
         <property>
                 <name>dfs.namenode.secondary.http-address</name>
-                <value>Brad-HDS-Master:50090</value>
+                <value>__MASTER__:50090</value>
         </property>
         <property>
                 <name>dfs.replication</name>
@@ -27,10 +27,10 @@
         </property>
         <property>
                 <name>dfs.namenode.name.dir</name>
-                <value>file:/home/brad/hadoop-3.2.2/tmp/dfs/name</value>
+                <value>__HADOOP_NAMEDIR__</value>
         </property>
         <property>
                 <name>dfs.datanode.data.dir</name>
-                <value>file:/home/brad/hadoop-3.2.2/tmp/dfs/data</value>
+                <value>__HADOOP_DATADIR__</value>
         </property>
 </configuration>

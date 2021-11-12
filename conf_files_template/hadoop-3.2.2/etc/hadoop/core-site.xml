@@ -19,11 +19,11 @@
 <configuration>
     <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://Brad-HDS-Master:9000</value>
+        <value>hdfs://__MASTER__:9000</value>
     </property>
     <property>
         <name>hadoop.tmp.dir</name>
-        <value>file:/home/brad/hadoop-3.2.2/tmp</value>
+        <value>__HADOOP_TMPDIR__</value>
         <description>Abase for other temporary directories.</description>
     </property>
     <property>
@@ -32,7 +32,7 @@
     </property>
     <property>
         <name>hds.host.address</name>
-        <value>Brad-HDS-Slave1:8000</value>
+        <value>__SLAVE_FIRST__:8000</value>
     </property>
     <property>
         <name>hadoop.proxyuser.brad.groups</name>

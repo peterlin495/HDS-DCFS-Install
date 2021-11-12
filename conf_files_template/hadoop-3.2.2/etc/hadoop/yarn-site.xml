@@ -16,7 +16,7 @@
 <configuration>
         <property>
                 <name>yarn.resourcemanager.hostname</name>
-                <value>Brad-HDS-Master</value>
+                <value>__MASTER__</value>
         </property>
         <property>
                 <name>yarn.nodemanager.aux-services</name>
@@ -24,6 +24,6 @@
         </property>
         <property>
             <name>yarn.application.classpath</name>
-            <value>$HADOOP_CONF_DIR, $HADOOP_COMMON_HOME/share/hadoop/common/*, $HADOOP_COMMON_HOME/share/hadoop/common/lib/*, $HADOOP_HDFS_HOME/share/hadoop/hdfs/*, $HADOOP_HDFS_HOME/share/hadoop/hdfs/lib/*, $HADOOP_YARN_HOME/share/hadoop/yarn/*, $HADOOP_YARN_HOME/share/hadoop/yarn/lib/*, /home/brad/hdrs-1.1.0-without-cdh/lib/*, /home/brad/hbase-2.3.4/lib/*</value>
+            <value>$HADOOP_CONF_DIR, $HADOOP_COMMON_HOME/share/hadoop/common/*, $HADOOP_COMMON_HOME/share/hadoop/common/lib/*, $HADOOP_HDFS_HOME/share/hadoop/hdfs/*, $HADOOP_HDFS_HOME/share/hadoop/hdfs/lib/*, $HADOOP_YARN_HOME/share/hadoop/yarn/*, $HADOOP_YARN_HOME/share/hadoop/yarn/lib/*, __HDRS_HOME__/lib/*, __HBASE_HOME__/lib/*</value>
         </property>
 </configuration>
