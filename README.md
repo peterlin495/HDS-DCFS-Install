@@ -45,6 +45,7 @@ git clone --recursive --depth 1 git@github.com:CW-B-W/HDS-DCFS-Install.git
 ```
 
 ## Install all
+NOTICE: **need to add the generated `conf_files/.bashrc` to `~/.bashrc` on your own**
 ```bash=
 python3 install_hdrs.py install
 ```
