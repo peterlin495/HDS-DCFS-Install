@@ -1,3 +1,6 @@
 [submodule "hds-2021"]
 	path = hds-2021
 	url = git@github.com:DSCLAB/hds-2021.git
+[submodule "DCFS"]
+	path = DCFS
+	url = git@github.com:DSCLAB/DCFS.git
