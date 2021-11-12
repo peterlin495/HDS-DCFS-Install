@@ -14,18 +14,13 @@
         "installDir": "/home/brad/HDS-DCFS-Install/apache-maven-3.8.3"
     },
     "zookeeper": {
-        "installDir": "/home/brad/HDS-DCFS-Install/apache-zookeeper-3.6.2-bin",
-        "dataDir": "$ZK_HOME/tmp/zookeeper"
+        "installDir": "/home/brad/HDS-DCFS-Install/apache-zookeeper-3.6.2-bin"
     },
     "hadoop": {
-        "installDir": "/home/brad/HDS-DCFS-Install/hadoop-3.2.2",
-        "tmpDir": "$HADOOP_HOME/tmp",
-        "nameDir": "$HADOOP_HOME/tmp/dfs/name",
-        "dataDir": "$HADOOP_HOME/tmp/dfs/data"
+        "installDir": "/home/brad/HDS-DCFS-Install/hadoop-3.2.2"
     },
     "hbase": {
-        "installDir": "/home/brad/HDS-DCFS-Install/hbase-2.3.4",
-        "tmpDir": "$HBASE_HOME/tmp"
+        "installDir": "/home/brad/HDS-DCFS-Install/hbase-2.3.4"
     },
     "phoenix": {
         "installDir": "/home/brad/HDS-DCFS-Install/phoenix-hbase-2.3-5.1.2-bin"

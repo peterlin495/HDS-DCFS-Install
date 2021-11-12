@@ -13,18 +13,13 @@
         "installDir": "__MVN_HOME__"
     },
     "zookeeper": {
-        "installDir": "__ZK_HOME__",
-        "dataDir": "__ZK_DATADIR__"
+        "installDir": "__ZK_HOME__"
     },
     "hadoop": {
-        "installDir": "__HADOOP_HOME__",
-        "tmpDir": "__HADOOP_TMPDIR__",
-        "nameDir": "__HADOOP_NAMEDIR__",
-        "dataDir": "__HADOOP_DATADIR__"
+        "installDir": "__HADOOP_HOME__"
     },
     "hbase": {
-        "installDir": "__HBASE_HOME__",
-        "tmpDir": "__HBASE_TMPDIR__"
+        "installDir": "__HBASE_HOME__"
     },
     "phoenix": {
         "installDir": "__PHOENIX_HOME__"

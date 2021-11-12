@@ -81,6 +81,7 @@ def replace_maven_stub():
     add_to_bashrc(replace_bashrc('conf_files_template/apache-maven-3.8.3/bashrc.json'))
 
 def install_maven():
+    print('Installing Maven')
     ins_path = get_conf('maven', 'installDir')
     if os.path.exists(ins_path):
         print('Maven has been installed on `%s` before. Skipping.' % ins_path)
@@ -139,10 +140,11 @@ def replace_zk_myid(filepath):
 def replace_zk_stub():
     conf_prefix = 'conf_files/apache-zookeeper-3.6.2-bin'
     replace_zk_zoocfg(conf_prefix + '/conf/zoo.cfg')
-    replace_zk_myid(conf_prefix + '/tmp/myid')
+    replace_zk_myid(conf_prefix + '/tmp/zookeeper/myid')
     add_to_bashrc(replace_bashrc('conf_files_template/apache-zookeeper-3.6.2-bin/bashrc.json'))
 
 def install_zookeeper():
+    print('Installing Zookeeper')
     ins_path = get_conf('zookeeper', 'installDir')
     if os.path.exists(ins_path):
         print('Zookeeper has been installed on `%s` before. Skipping.' % ins_path)
@@ -173,6 +175,7 @@ def replace_hadoop_stub():
     add_to_bashrc(replace_bashrc('conf_files_template/hadoop-3.2.2/bashrc.json'))
 
 def install_hadoop():
+    print('Installing Hadoop')
     ins_path = get_conf('hadoop', 'installDir')
     if os.path.exists(ins_path):
         print('Hadoop has been installed on `%s` before. Skipping.' % ins_path)
@@ -207,6 +210,7 @@ def replace_hbase_stub():
     add_to_bashrc(replace_bashrc('conf_files_template/hbase-2.3.4/bashrc.json'))
 
 def install_hbase():
+    print('Installing HBase')
     ins_path = get_conf('hbase', 'installDir')
     if os.path.exists(ins_path):
         print('HBase has been installed on `%s` before. Skipping.' % ins_path)
@@ -233,6 +237,7 @@ def remove_hbase():
 
 ''' >>>>>>>>>>>>>>> phoenix >>>>>>>>>>>>>>> '''
 def install_phoenix():
+    print('Installing Phoenix')
     ins_path = get_conf('phoenix', 'installDir')
     if os.path.exists(ins_path):
         print('Phoenix has been installed on `%s` before. Skipping.' % ins_path)
@@ -263,10 +268,12 @@ def remove_phoenix():
 
 ''' >>>>>>>>>>>>>>> hdrs >>>>>>>>>>>>>>> '''
 def install_hdrs():
+    print('Installing HDRS')
     ins_path = get_conf('hdrs', 'installDir')
     tar_path = 'hds-2021/hdrs-assembly/target/hdrs-1.1.0-without-cdh-bin.tar.gz'
     if not os.path.exists(tar_path):
         # `mvn clean package` to compile hdrs
+        print('Compiling HDRS')
         subprocess.run([get_conf('maven', 'installDir')+'/bin/mvn', 'clean', 'package'], cwd='hds-2021')
     ex_path = Path(ins_path).parent.absolute()
     tar_xf_file(tar_path, ex_path)

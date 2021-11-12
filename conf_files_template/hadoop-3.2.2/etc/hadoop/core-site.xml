@@ -23,7 +23,7 @@
     </property>
     <property>
         <name>hadoop.tmp.dir</name>
-        <value>__HADOOP_TMPDIR__</value>
+        <value>__HADOOP_HOME__/tmp</value>
         <description>Abase for other temporary directories.</description>
     </property>
     <property>

@@ -60,7 +60,7 @@
 
   <property>
     <name>hbase.tmp.dir</name>
-    <value>__HBASE_TMPDIR__</value>
+    <value>__HBASE_HOME__/tmp</value>
   </property>
   <property>
     <name>hbase.unsafe.stream.capability.enforce</name>
