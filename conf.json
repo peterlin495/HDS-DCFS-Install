@@ -24,7 +24,8 @@
         "dataDir": "$HADOOP_HOME/tmp/dfs/data"
     },
     "hbase": {
-        "installDir": "/home/brad/HDS-DCFS-Install/hbase-2.3.4"
+        "installDir": "/home/brad/HDS-DCFS-Install/hbase-2.3.4",
+        "tmpDir": "$HBASE_HOME/tmp"
     },
     "phoenix": {
         "installDir": "/home/brad/HDS-DCFS-Install/phoenix-hbase-2.3-5.1.2-bin"

@@ -142,9 +142,9 @@
 # export GREP="${GREP-grep}"
 # export SED="${SED-sed}"
 
-export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_231
+export JAVA_HOME=__JAVA_HOME__
 export HBASE_MANAGES_ZK=false
-export HBASE_CLASSPATH=/home/brad/hdrs-1.1.0-without-cdh/lib/*
+export HBASE_CLASSPATH=__HDRS_HOME__/lib/*
 
 # MYSQL JDBC environment
 # export HBASE_CLASSPATH=$HBASE_CLASSPATH:/usr/share/java/mysql.jar

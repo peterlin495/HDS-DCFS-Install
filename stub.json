@@ -23,7 +23,8 @@
         "dataDir": "__HADOOP_DATADIR__"
     },
     "hbase": {
-        "installDir": "__HBASE_HOME__"
+        "installDir": "__HBASE_HOME__",
+        "tmpDir": "__HBASE_TMPDIR__"
     },
     "phoenix": {
         "installDir": "__PHOENIX_HOME__"

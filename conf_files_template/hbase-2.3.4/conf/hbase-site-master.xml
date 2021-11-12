@@ -46,12 +46,12 @@
   </property>
   <property>
     <name>hbase.rootdir</name>
-    <value>hdfs://Brad-HDS-Master:9000/hbase</value>
+    <value>hdfs://__MASTER__:9000/hbase</value>
   </property>
 
   <property>
     <name>hbase.zookeeper.quorum</name>
-    <value>Brad-HDS-Master,Brad-HDS-Slave1,Brad-HDS-Slave2</value>
+    <value>__SERVERS_STR_COMMA__</value>
   </property>
   <property>
     <name>hbase.zookeeper.property.clientPort</name>
@@ -60,7 +60,7 @@
 
   <property>
     <name>hbase.tmp.dir</name>
-    <value>/home/brad/hbase-2.3.4/tmp</value>
+    <value>__HBASE_TMPDIR__</value>
   </property>
   <property>
     <name>hbase.unsafe.stream.capability.enforce</name>

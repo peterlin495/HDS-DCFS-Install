@@ -46,12 +46,12 @@
   </property>
   <property>
     <name>hbase.rootdir</name>
-    <value>hdfs://Brad-HDS-Master:9000/hbase</value>
+    <value>hdfs://__MASTER__:9000/hbase</value>
   </property>
 
   <property>
     <name>hbase.zookeeper.quorum</name>
-    <value>Brad-HDS-Master,Brad-HDS-Slave1,Brad-HDS-Slave2</value>
+    <value>__SERVERS_STR_COMMA__</value>
   </property>
   <property>
     <name>hbase.zookeeper.property.clientPort</name>
@@ -60,7 +60,7 @@
 
   <property>
     <name>hbase.tmp.dir</name>
-    <value>/home/brad/hbase-2.3.4/tmp</value>
+    <value>__HBASE_TMPDIR__</value>
   </property>
   <property>
     <name>hbase.unsafe.stream.capability.enforce</name>
@@ -70,7 +70,7 @@
     <!-- 設定成設定檔的位置 Start -->
   <property>
     <name>hds.config.location</name>
-    <value>/home/brad/hdrs-1.1.0-without-cdh/conf</value>
+    <value>__HDRS_HOME__/conf</value>
   </property>
   <!-- 設定成設定檔的位置 End -->
   <property>
@@ -92,7 +92,7 @@
   <!--dbLogger start-->
   <property>
     <name>hds.logger.jdbc.url</name>
-    <value>jdbc:phoenix:Brad-HDS-Slave1:2181</value>
+    <value>jdbc:phoenix:__SLAVE_FIRST__:2181</value>
     <!--<value>jdbc:mysql://Brad-HDS-Master:3306/HDS_JDBC?user=brad&amp;password=00000000</value>-->
   </property>
   <property>
