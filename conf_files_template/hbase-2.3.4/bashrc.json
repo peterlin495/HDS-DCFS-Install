@@ -1,0 +1,5 @@
+{
+    "HBASE_HOME": "__HBASE_HOME__",
+    "HBASE_CONF_DIR": "$HBASE_HOME/conf",
+    "PATH": "$PATH:${HBASE_HOME}/bin"
+}

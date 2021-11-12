@@ -8,8 +8,7 @@
     },
     "zookeeper": {
         "installDir": "__ZK_HOME__",
-        "dataDir": "__ZK_DATADIR__",
-        "serverList": "__ZK_SERVERS__"
+        "dataDir": "__ZK_DATADIR__"
     },
     "hadoop": {
         "installDir": "__HADOOP_HOME__",
