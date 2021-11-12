@@ -1,6 +1,6 @@
 # HDS & DCFS Installer
 ## clone project
-git clone --recursive git@github.com:CW-B-W/HDS-DCFS-Install.git
+git clone --recursive --depth 1 git@github.com:CW-B-W/HDS-DCFS-Install.git
 
 ## requirements
 * python3
