@@ -1,0 +1,29 @@
+{
+    "hostname": "Brad-HDS-Master",
+    "cluster": {
+        "master": "Brad-HDS-Master",
+        "slaves": [
+            "Brad-HDS-Slave1",
+            "Brad-HDS-Slave2"
+        ]
+    },
+    "maven": {
+        "installDir": "file:/opt"
+    },
+    "zookeeper": {
+        "installDir": "file:/opt",
+        "dataDir": "/home/brad/apache-zookeeper-3.6.2-bin/tmp/zookeeper"
+    },
+    "hadoop": {
+        "installDir": "file:/opt",
+        "tmpDir": "file:/home/brad/hadoop-3.2.2/tmp",
+        "nameDir": "file:/home/brad/hadoop-3.2.2/tmp/dfs/name",
+        "dataDir": "file:/home/brad/hadoop-3.2.2/tmp/dfs/data"
+    },
+    "hbase": {
+        "installDir": "file:/opt"
+    },
+    "phoenix": {
+        "installDir": "file:/opt"
+    }
+}

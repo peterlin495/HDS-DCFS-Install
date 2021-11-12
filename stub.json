@@ -1,0 +1,26 @@
+{
+    "cluster": {
+        "master": "__MASTER__",
+        "slaves": "__SLAVES__"
+    },
+    "maven": {
+        "installDir": "__MVN_HOME__"
+    },
+    "zookeeper": {
+        "installDir": "__ZK_HOME__",
+        "dataDir": "__ZK_DATADIR__",
+        "serverList": "__ZK_SERVERS__"
+    },
+    "hadoop": {
+        "installDir": "__HADOOP_HOME__",
+        "tmpDir": "__HADOOP_TMPDIR__",
+        "nameDir": "__HADOOP_NAMEDIR__",
+        "dataDir": "__HADOOP_DATADIR__"
+    },
+    "hbase": {
+        "installDir": "__HBASE_HOME__"
+    },
+    "phoenix": {
+        "installDir": "__PHOENIX_HOME__"
+    }
+}
