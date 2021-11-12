@@ -18,8 +18,12 @@ python3 install_hdrs.py install ...
 ```
 e.g.
 ```bash=
+python3 install_hdrs.py install maven
+python3 install_hdrs.py install zookeeper
 python3 install_hdrs.py install hadoop
 python3 install_hdrs.py install hbase
+python3 install_hdrs.py install phoenix
+python3 install_hdrs.py install hdrs
 ```
 
 ## Remove all
@@ -29,8 +33,12 @@ python3 install_hdrs.py remove
 
 ## Remove single module
 ```bash=
-python3 install_hdrs.py hadoop
-python3 install_hdrs.py hbase
+python3 install_hdrs.py remove maven
+python3 install_hdrs.py remove zookeeper
+python3 install_hdrs.py remove hadoop
+python3 install_hdrs.py remove hbase
+python3 install_hdrs.py remove phoenix
+python3 install_hdrs.py remove hdrs
 ```
 
 ## Clean
