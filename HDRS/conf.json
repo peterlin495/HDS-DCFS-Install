@@ -11,21 +11,21 @@
         "javaHome": "/usr/lib/jvm/jdk1.8.0_231"
     },
     "maven": {
-        "installDir": "/home/brad/hdrs/hdrs/apache-maven-3.8.3"
+        "installDir": "/home/brad/hdrs/apache-maven-3.8.3"
     },
     "zookeeper": {
-        "installDir": "/home/brad/hdrs/hdrs/apache-zookeeper-3.6.2-bin"
+        "installDir": "/home/brad/hdrs/apache-zookeeper-3.6.2-bin"
     },
     "hadoop": {
-        "installDir": "/home/brad/hdrs/hdrs/hadoop-3.2.2"
+        "installDir": "/home/brad/hdrs/hadoop-3.2.2"
     },
     "hbase": {
-        "installDir": "/home/brad/hdrs/hdrs/hbase-2.3.4"
+        "installDir": "/home/brad/hdrs/hbase-2.3.4"
     },
     "phoenix": {
-        "installDir": "/home/brad/hdrs/hdrs/phoenix-hbase-2.3-5.1.2-bin"
+        "installDir": "/home/brad/hdrs/phoenix-hbase-2.3-5.1.2-bin"
     },
     "hdrs": {
-        "installDir": "/home/brad/hdrs/hdrs/hdrs-1.1.0-without-cdh"
+        "installDir": "/home/brad/hdrs/hdrs-1.1.0-without-cdh"
     }
 }

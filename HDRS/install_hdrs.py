@@ -275,11 +275,11 @@ def remove_phoenix():
 def install_hdrs():
     print('Installing HDRS')
     ins_path = get_conf('hdrs', 'installDir')
-    tar_path = 'hds-2021/hdrs-assembly/target/hdrs-1.1.0-without-cdh-bin.tar.gz'
+    tar_path = '../hds-2021/hdrs-assembly/target/hdrs-1.1.0-without-cdh-bin.tar.gz'
     if not os.path.exists(tar_path):
         # `mvn clean package` to compile hdrs
         print('Compiling HDRS')
-        subprocess.run([get_conf('maven', 'installDir')+'/bin/mvn', 'clean', 'package'], cwd='hds-2021')
+        subprocess.run([get_conf('maven', 'installDir')+'/bin/mvn', 'clean', 'package'], cwd='../hds-2021')
     ex_path = Path(ins_path).parent.absolute()
     os.makedirs(ex_path, exist_ok=True)
     tar_xf_file(tar_path, ex_path)
