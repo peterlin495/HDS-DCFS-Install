@@ -86,11 +86,12 @@ def install_maven():
     if os.path.exists(ins_path):
         print('Maven has been installed on `%s` before. Skipping.' % ins_path)
         return
+    ex_path = Path(ins_path).parent.absolute()
+    os.makedirs(ex_path, exist_ok=True)
     url = 'https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.tar.gz'
     tar_path = 'downloads/apache-maven-3.8.3-bin.tar.gz'
     if not os.path.exists(tar_path):
         wget_file(url, tar_path)
-    ex_path = Path(ins_path).parent.absolute()
     tar_xf_file(tar_path, ex_path)
     replace_maven_stub()
 
@@ -151,11 +152,12 @@ def install_zookeeper():
         return
     cp_dir('conf_files_template/apache-zookeeper-3.6.2-bin', 'conf_files/apache-zookeeper-3.6.2-bin')
     os.remove('conf_files/apache-zookeeper-3.6.2-bin/bashrc.json')
+    ex_path = Path(ins_path).parent.absolute()
+    os.makedirs(ex_path, exist_ok=True)
     url = 'https://archive.apache.org/dist/zookeeper/zookeeper-3.6.2/apache-zookeeper-3.6.2-bin.tar.gz'
     tar_path = 'downloads/apache-zookeeper-3.6.2-bin.tar.gz'
     if not os.path.exists(tar_path):
         wget_file(url, tar_path)
-    ex_path = Path(ins_path).parent.absolute()
     tar_xf_file(tar_path, ex_path)
     replace_zk_stub()
     cp_dir('conf_files/apache-zookeeper-3.6.2-bin', ex_path)
@@ -182,11 +184,12 @@ def install_hadoop():
         return
     cp_dir('conf_files_template/hadoop-3.2.2', 'conf_files/hadoop-3.2.2')
     os.remove('conf_files/hadoop-3.2.2/bashrc.json')
+    ex_path = Path(ins_path).parent.absolute()
+    os.makedirs(ex_path, exist_ok=True)
     url = 'https://archive.apache.org/dist/hadoop/common/hadoop-3.2.2/hadoop-3.2.2.tar.gz'
     tar_path = 'downloads/hadoop-3.2.2.tar.gz'
     if not os.path.exists(tar_path):
         wget_file(url, tar_path)
-    ex_path = Path(ins_path).parent.absolute()
     tar_xf_file(tar_path, ex_path)
     replace_hadoop_stub()
     cp_dir('conf_files/hadoop-3.2.2', ex_path)
@@ -217,11 +220,12 @@ def install_hbase():
         return
     cp_dir('conf_files_template/hbase-2.3.4', 'conf_files/hbase-2.3.4')
     os.remove('conf_files/hbase-2.3.4/bashrc.json')
+    ex_path = Path(ins_path).parent.absolute()
+    os.makedirs(ex_path, exist_ok=True)
     url = 'https://archive.apache.org/dist/hbase/2.3.4/hbase-2.3.4-bin.tar.gz'
     tar_path = 'downloads/hbase-2.3.4-bin.tar.gz'
     if not os.path.exists(tar_path):
         wget_file(url, tar_path)
-    ex_path = Path(ins_path).parent.absolute()
     tar_xf_file(tar_path, ex_path)
     replace_hbase_stub()
     cp_dir('conf_files/hbase-2.3.4', ex_path)
@@ -242,11 +246,12 @@ def install_phoenix():
     if os.path.exists(ins_path):
         print('Phoenix has been installed on `%s` before. Skipping.' % ins_path)
         return
+    ex_path = Path(ins_path).parent.absolute()
+    os.makedirs(ex_path, exist_ok=True)
     url = 'https://dlcdn.apache.org/phoenix/phoenix-5.1.2/phoenix-hbase-2.3-5.1.2-bin.tar.gz'
     tar_path = 'downloads/phoenix-hbase-2.3-5.1.2-bin.tar.gz'
     if not os.path.exists(tar_path):
         wget_file(url, tar_path)
-    ex_path = Path(ins_path).parent.absolute()
     tar_xf_file(tar_path, ex_path)
     add_to_bashrc(replace_bashrc('conf_files_template/phoenix-hbase-2.3-5.1.2-bin/bashrc.json'))
     shutil.copyfile(
@@ -276,6 +281,7 @@ def install_hdrs():
         print('Compiling HDRS')
         subprocess.run([get_conf('maven', 'installDir')+'/bin/mvn', 'clean', 'package'], cwd='hds-2021')
     ex_path = Path(ins_path).parent.absolute()
+    os.makedirs(ex_path, exist_ok=True)
     tar_xf_file(tar_path, ex_path)
 
 def remove_hdrs():
