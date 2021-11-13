@@ -1,8 +1,4 @@
 # HDS Installer
-## clone project
-```
-git clone --recursive --depth 1 git@github.com:CW-B-W/HDS-DCFS-Install.git
-```
 
 ## requirements
 * jdk8
