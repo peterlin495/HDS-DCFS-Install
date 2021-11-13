@@ -1,4 +1,11 @@
-downloads
+downloads/
+apache-maven-3.8.3/
+apache-zookeeper-3.6.2-bin/
+conf_files/
+hadoop-3.2.2/
+hbase-2.3.4/
+hdrs-1.1.0-without-cdh/
+phoenix-hbase-2.3-5.1.2-bin/
 
 # General
 .DS_Store
