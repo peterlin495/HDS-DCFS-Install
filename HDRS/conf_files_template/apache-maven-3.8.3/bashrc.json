@@ -1,0 +1,4 @@
+{
+    "MVN_HOME": "__MVN_HOME__",
+    "PATH": "$PATH:$MVN_HOME/bin"
+}

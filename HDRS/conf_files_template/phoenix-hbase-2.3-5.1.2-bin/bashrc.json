@@ -1,0 +1,5 @@
+{
+    "PHOENIX_HOME": "__PHOENIX_HOME__",
+    "PHOENIX_CLASSPATH": "$PHOENIX_HOME",
+    "PATH": "$PHOENIX_HOME/bin:$PATH"
+}
