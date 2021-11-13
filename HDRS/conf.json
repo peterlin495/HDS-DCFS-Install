@@ -27,5 +27,8 @@
     },
     "hdrs": {
         "installDir": "/home/brad/hdrs/hdrs-1.1.0-without-cdh"
+    },
+    "phoenixqs": {
+        "installDir": "/home/brad/hdrs/phoenix-queryserver-6.0.0"
     }
 }

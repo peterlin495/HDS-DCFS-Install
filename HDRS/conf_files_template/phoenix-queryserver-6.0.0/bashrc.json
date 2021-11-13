@@ -1,0 +1,4 @@
+{
+    "PHOENIXQS_HOME": "__PHOENIXQS_HOME__",
+    "PATH": "$PHOENIXQS_HOME/bin:$PATH"
+}

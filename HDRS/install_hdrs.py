@@ -304,6 +304,37 @@ def remove_hdrs():
     print('HDRS removed')
 ''' <<<<<<<<<<<<<<< hdrs <<<<<<<<<<<<<<< '''
 
+
+''' >>>>>>>>>>>>>>> PhoenixQS >>>>>>>>>>>>>>> '''
+def install_phoenixqs():
+    print('Installing PhoenixQueryServer')
+    ins_path = get_conf('phoenixqs', 'installDir')
+    if os.path.exists(ins_path):
+        print('PhoenixQueryServer has been installed on `%s` before. Skipping.' % ins_path)
+        return
+    ex_path = str(Path(ins_path).parent.absolute())
+    dir_name = Path(ins_path).name
+    os.makedirs(ex_path, exist_ok=True)
+    url = 'https://dlcdn.apache.org/phoenix/phoenix-queryserver-6.0.0/phoenix-queryserver-6.0.0-bin.tar.gz'
+    tar_path = 'downloads/phoenix-queryserver-6.0.0-bin.tar.gz'
+    if not os.path.exists(tar_path):
+        wget_file(url, tar_path)
+    tar_xf_file(tar_path, ex_path)
+    add_to_bashrc(replace_bashrc('conf_files_template/phoenix-queryserver-6.0.0/bashrc.json'))
+    os.rename(ex_path+'/phoenix-queryserver-6.0.0', ex_path+'/'+dir_name)
+    shutil.copyfile(
+        get_conf('phoenix', 'installDir')+'/phoenix-client-hbase-2.3-5.1.2.jar', 
+        get_conf('phoenixqs', 'installDir')+'/phoenix-client-hbase-2.3-5.1.2.jar'
+    )
+
+def remove_phoenixqs():
+    print('Removing PhoenixQueryServer...')
+    ins_path = get_conf('phoenixqs', 'installDir')
+    if os.path.exists(ins_path):
+        shutil.rmtree(ins_path)
+    print('PhoenixQueryServer removed')
+''' <<<<<<<<<<<<<<< PhoenixQS <<<<<<<<<<<<<<< '''
+
 if __name__ == '__main__':
     if len(sys.argv) < 2:
         print('Wrong argument')
@@ -333,6 +364,7 @@ if __name__ == '__main__':
                 install_hbase()
                 install_phoenix()
                 install_hdrs()
+                install_phoenixqs()
             else:
                 print('Aborted')
         else:
@@ -351,6 +383,7 @@ if __name__ == '__main__':
                 remove_hbase()
                 remove_phoenix()
                 remove_hdrs()
+                remove_phoenixqs()
             else:
                 print('Aborted')
         else:

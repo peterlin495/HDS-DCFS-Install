@@ -10,6 +10,11 @@ git clone --recursive --depth 1 git@github.com:CW-B-W/HDS-DCFS-Install.git
 
 # How to use
 
+## First to install dependencies
+```
+sh dependencies.sh
+```
+
 ## Edit conf.json
 **need to set `cluster.hostname` for each node**
 **need to specify `jdk.javaHome`**
@@ -52,6 +57,9 @@ NOTICE: **need to add the generated `conf_files/.bashrc` to `~/.bashrc` on your 
 ```bash=
 python3 install_hdrs.py install
 ```
+```bash=
+cat conf_files/.bashrc >> ~/.bashrc
+```
 
 ## Install single module
 ```bash=
@@ -65,6 +73,7 @@ python3 install_hdrs.py install hadoop
 python3 install_hdrs.py install hbase
 python3 install_hdrs.py install phoenix
 python3 install_hdrs.py install hdrs
+python3 install_hdrs.py install phoenixqs
 ```
 
 ## Remove all
@@ -80,6 +89,7 @@ python3 install_hdrs.py remove hadoop
 python3 install_hdrs.py remove hbase
 python3 install_hdrs.py remove phoenix
 python3 install_hdrs.py remove hdrs
+python3 install_hdrs.py remove phoenixqs
 ```
 
 ## Clean

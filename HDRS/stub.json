@@ -26,5 +26,8 @@
     },
     "hdrs": {
         "installDir": "__HDRS_HOME__"
+    },
+    "phoenixqs": {
+        "installDir": "__PHOENIXQS_HOME__"
     }
 }
