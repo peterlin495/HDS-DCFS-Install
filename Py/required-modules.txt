@@ -8,6 +8,9 @@ pymysql==1.0.2
 # mssql
 pymssql==2.2.2
 
+# oraclesql
+cx_oracle==8.3.0
+
 # mongodb
 pymongo==3.12.1
 
