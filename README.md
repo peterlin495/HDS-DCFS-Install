@@ -5,6 +5,8 @@ git clone --recursive --depth 1 git@github.com:CW-B-W/HDS-DCFS-Install.git
 ```
 
 # Install HDRS
+See the `HDRS` directory  
+**Need to edit `conf.json`**
 ```
 cd HDRS
 sh dependencies.sh
