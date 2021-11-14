@@ -11,6 +11,7 @@ See the `HDRS` directory
 cd HDRS
 sh dependencies.sh
 python3 install_hdrs.py install
+cat conf_files/.bashrc >> ~/.bashrc
 ```
 
 # Install Python requirements
