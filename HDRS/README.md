@@ -49,7 +49,8 @@ sh dependencies.sh
 ```
 
 ## Install all
-NOTICE: **need to add the generated `conf_files/.bashrc` to `~/.bashrc` on your own**
+NOTICE: **need to add the generated `conf_files/.bashrc` to `~/.bashrc` on your own**  
+NOTICE: **It will compile HDRS for your. If you already have the HDRS package, please place the `hdrs-1.1.0-without-cdh-bin.tar.gz` on `hds-2021/hdrs-assembly/target` to avoid compiling**
 ```bash=
 python3 install_hdrs.py install
 ```
