@@ -67,7 +67,11 @@
     <value>false</value>
   </property>
 
-    <!-- 設定成設定檔的位置 Start -->
+  <property>
+    <name>hds.httpserver.port</name>
+    <value>8000</value>
+  </property>
+  <!-- 設定成設定檔的位置 Start -->
   <property>
     <name>hds.config.location</name>
     <value>__HDRS_HOME__/conf</value>
