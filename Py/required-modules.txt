@@ -14,6 +14,9 @@ cx_oracle==8.3.0
 # mongodb
 pymongo==3.12.1
 
+# elasticsearch
+elasticsearch==7.15.2
+
 # phoenix
 Cython==0.29.24 --install-option="--no-cython-compile"
 phoenixdb==1.1.0
