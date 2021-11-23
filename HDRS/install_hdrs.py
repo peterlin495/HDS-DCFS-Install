@@ -143,7 +143,7 @@ def replace_zk_myid(filepath):
 def replace_zk_stub():
     conf_prefix = 'conf_files/apache-zookeeper-3.6.2-bin'
     replace_zk_zoocfg(conf_prefix + '/conf/zoo.cfg')
-    replace_zk_myid(conf_prefix + '/tmp/zookeeper/myid')
+    replace_zk_myid(conf_prefix + '/data/myid')
     add_to_bashrc(replace_bashrc('conf_files_template/apache-zookeeper-3.6.2-bin/bashrc.json'))
 
 def install_zookeeper():
