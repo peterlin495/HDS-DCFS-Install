@@ -78,7 +78,7 @@ def replace_bashrc(bashrc_path):
 
 ''' >>>>>>>>>>>>>>> maven >>>>>>>>>>>>>>> '''
 def replace_maven_stub():
-    add_to_bashrc(replace_bashrc('conf_files_template/apache-maven-3.8.4/bashrc.json'))
+    add_to_bashrc(replace_bashrc('conf_files_template/apache-maven-3.8.6/bashrc.json'))
 
 def install_maven():
     print('Installing Maven')
@@ -89,13 +89,13 @@ def install_maven():
     ex_path = str(Path(ins_path).parent.absolute())
     dir_name = Path(ins_path).name
     os.makedirs(ex_path, exist_ok=True)
-    url = 'https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz'
-    tar_path = 'downloads/apache-maven-3.8.4-bin.tar.gz'
+    url = 'https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz'
+    tar_path = 'downloads/apache-maven-3.8.6-bin.tar.gz'
     if not os.path.exists(tar_path):
         wget_file(url, tar_path)
     tar_xf_file(tar_path, ex_path)
     replace_maven_stub()
-    os.rename(ex_path+'/apache-maven-3.8.4', ex_path+'/'+dir_name)
+    os.rename(ex_path+'/apache-maven-3.8.6', ex_path+'/'+dir_name)
 
 def remove_maven():
     print('Removing Maven...')

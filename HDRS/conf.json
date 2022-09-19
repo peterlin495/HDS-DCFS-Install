@@ -11,7 +11,7 @@
         "javaHome": "/usr/lib/jvm/java-8-openjdk-amd64"
     },
     "maven": {
-        "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/apache-maven-3.8.4"
+        "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/apache-maven-3.8.6"
     },
     "zookeeper": {
         "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/apache-zookeeper-3.6.2-bin"

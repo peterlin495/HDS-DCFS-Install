@@ -28,7 +28,7 @@ sh dependencies.sh
         "javaHome": "/usr/lib/jvm/jdk1.8.0_231"
     },
     "maven": {
-        "installDir": "/home/brad/HDS-DCFS-Install/apache-maven-3.8.4"
+        "installDir": "/home/brad/HDS-DCFS-Install/apache-maven-3.8.6"
     },
     "zookeeper": {
         "installDir": "/home/brad/HDS-DCFS-Install/apache-zookeeper-3.6.2-bin"
