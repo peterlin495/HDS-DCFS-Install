@@ -17,33 +17,33 @@ sh dependencies.sh
 ```json=
 {
     "cluster": {
-        "hostname": "Brad-HDS-Master",
-        "master": "Brad-HDS-Master",
+        "hostname": "peter-HDS-Master",
+        "master": "peter-HDS-Master",
         "slaves": [
-            "Brad-HDS-Slave1",
-            "Brad-HDS-Slave2"
+            "peter-HDS-Slave1",
+            "peter-HDS-Slave2"
         ]
     },
     "jdk": {
         "javaHome": "/usr/lib/jvm/jdk1.8.0_231"
     },
     "maven": {
-        "installDir": "/home/brad/HDS-DCFS-Install/apache-maven-3.8.4"
+        "installDir": "/home/peter/HDS-DCFS-Install/apache-maven-3.8.4"
     },
     "zookeeper": {
-        "installDir": "/home/brad/HDS-DCFS-Install/apache-zookeeper-3.6.2-bin"
+        "installDir": "/home/peter/HDS-DCFS-Install/apache-zookeeper-3.6.2-bin"
     },
     "hadoop": {
-        "installDir": "/home/brad/HDS-DCFS-Install/hadoop-3.2.2"
+        "installDir": "/home/peter/HDS-DCFS-Install/hadoop-3.2.2"
     },
     "hbase": {
-        "installDir": "/home/brad/HDS-DCFS-Install/hbase-2.3.4"
+        "installDir": "/home/peter/HDS-DCFS-Install/hbase-2.3.4"
     },
     "phoenix": {
-        "installDir": "/home/brad/HDS-DCFS-Install/phoenix-hbase-2.3-5.1.2-bin"
+        "installDir": "/home/peter/HDS-DCFS-Install/phoenix-hbase-2.3-5.1.2-bin"
     },
     "hdrs": {
-        "installDir": "/home/brad/HDS-DCFS-Install/hdrs-1.1.0-without-cdh"
+        "installDir": "/home/peter/HDS-DCFS-Install/hdrs-1.1.0-without-cdh"
     }
 }
 ```

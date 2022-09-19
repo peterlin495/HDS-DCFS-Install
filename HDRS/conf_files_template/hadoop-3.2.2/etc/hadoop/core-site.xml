@@ -35,11 +35,11 @@
         <value>__SLAVE_FIRST__:8000</value>
     </property>
     <property>
-        <name>hadoop.proxyuser.brad.groups</name>
+        <name>hadoop.proxyuser.peter.groups</name>
         <value>*</value>
     </property>
     <property>
-        <name>hadoop.proxyuser.brad.hosts</name>
+        <name>hadoop.proxyuser.peter.hosts</name>
         <value>*</value>
     </property>
     <property>
