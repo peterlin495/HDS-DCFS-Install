@@ -1,10 +1,10 @@
 {
     "cluster": {
-        "hostname": "Brad-HDS-Master",
-        "master": "Brad-HDS-Master",
+        "hostname": "peter-hadoop0",
+        "master": "peter-hadoop0",
         "slaves": [
-            "Brad-HDS-Slave1",
-            "Brad-HDS-Slave2"
+            "peter-hadoop1",
+            "peter-hadoop2"
         ]
     },
     "jdk": {
