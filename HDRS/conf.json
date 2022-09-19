@@ -11,24 +11,24 @@
         "javaHome": "/usr/lib/jvm/java-8-openjdk-amd64"
     },
     "maven": {
-        "installDir": "/home/brad/hdrs/apache-maven-3.8.4"
+        "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/apache-maven-3.8.4"
     },
     "zookeeper": {
-        "installDir": "/home/brad/hdrs/apache-zookeeper-3.6.2-bin"
+        "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/apache-zookeeper-3.6.2-bin"
     },
     "hadoop": {
-        "installDir": "/home/brad/hdrs/hadoop-3.2.2"
+        "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/hadoop-3.2.2"
     },
     "hbase": {
-        "installDir": "/home/brad/hdrs/hbase-2.3.4"
+        "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/hbase-2.3.4"
     },
     "phoenix": {
-        "installDir": "/home/brad/hdrs/phoenix-hbase-2.3-5.1.2-bin"
+        "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/phoenix-hbase-2.3-5.1.2-bin"
     },
     "hdrs": {
-        "installDir": "/home/brad/hdrs/hdrs-1.1.0-without-cdh"
+        "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/hdrs-1.1.0-without-cdh"
     },
     "phoenixqs": {
-        "installDir": "/home/brad/hdrs/phoenix-queryserver-6.0.0"
+        "installDir": "/home/peter/HDS-DCFS-Install/HDRS/conf_files_template/phoenix-queryserver-6.0.0"
     }
 }
