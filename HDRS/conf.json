@@ -8,10 +8,10 @@
         ]
     },
     "jdk": {
-        "javaHome": "/usr/lib/jvm/jdk1.8.0_231"
+        "javaHome": "/usr/lib/jvm/java-8-openjdk-amd64"
     },
     "maven": {
-        "installDir": "/home/brad/hdrs/apache-maven-3.8.3"
+        "installDir": "/home/brad/hdrs/apache-maven-3.8.4"
     },
     "zookeeper": {
         "installDir": "/home/brad/hdrs/apache-zookeeper-3.6.2-bin"
